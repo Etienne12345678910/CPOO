@@ -20,29 +20,21 @@
 import random
 
 
-for i in [0, 2]:
+for i in range(50):
 
- print('Entrez votre prenom:')
- prenom = input()
- print('Entrez votre nom:')
- nom = input()
- print('Entrez votre age:')
- #age = int(input())
  age = random.randint(1, 100)
- print('Bonjour, ' + prenom + ' ' + nom + ' ' + str(age))
-
  if  age==9 or age==10 :
-  print('Vous etes un poussin')
+  print(age, 'Vous etes un poussin')
  elif age==11 or age==12 :    
-  print('Vous etes un  benjamin')
+  print(age, 'Vous etes un  benjamin')
  elif age==13 or age==14 :    
-    print('Vous etes un  minime')    
+    print(age,'Vous etes un  minime')    
  elif age==15 or age==16 :    
-     print('Vous etes un  cadet')
+     print(age,'Vous etes un  cadet')
  elif age==17 or age==18 :    
-     print('Vous etes un  junior')
+     print(age,'Vous etes un  junior')
  elif age>=19 and age<=34 :    
-     print('Vous etes un  senior') 
+     print(age,'Vous etes un  senior') 
 
  else :
      print('Votre age n est pas compris entre 9 et 34 ans')
