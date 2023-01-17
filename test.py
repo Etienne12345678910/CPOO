@@ -15,28 +15,28 @@
 #demandez l age etc etc
 
 print('Entrez votre prenom:')
-x = input()
+prenom = input()
 print('Entrez votre nom:')
-y = input()
+nom = input()
 print('Entrez votre age:')
-z = input()
-print('Bonjour, ' + x + ' ' + y + ' ' + z)
+age = int(input())
+print('Bonjour, ' + prenom + ' ' + nom + ' ' + str(age))
 
-if z=='9' or z=='10':
+if  age==9 or age==10 :
     print('Vous etes un poussin')
-elif z=='11' or z=='12' :    
+elif age==11 or age==12 :    
     print('Vous etes un  benjamin')
-elif z=='13' or z=='14' :    
+elif age==13 or age==14 :    
     print('Vous etes un  minime')    
-elif z=='15' or z=='16' :    
+elif age==15 or age==16 :    
     print('Vous etes un  cadet')
-elif z=='17' or z=='18' :    
+elif age==17 or age==18 :    
     print('Vous etes un  junior')
-elif z>='19' or z<='34' :    
-    print('Vous etes un  senior')            
+elif age>=19 and age<=34 :    
+    print('Vous etes un  senior') 
 
 else :
-    print('Vous etes vieux')
+    print('Votre age n est pas compris entre 9 et 34 ans')
 
 
 
