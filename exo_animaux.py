@@ -6,13 +6,11 @@ class Mamifere:
         print("Je communique en rugissant")
 
     def __dormir__(self):
-        print("ZZZZZZZ")    
+        print("ZZZZZZZ")  
 
 
 
-
-
-class Hypo(Mamifere):
+class Aquatique(Mamifere):
     def __init__(self,grogne):
         self.grogne = grogne
         # self.mange = mange
@@ -20,35 +18,28 @@ class Hypo(Mamifere):
 
     def groner(self):
         super().__son__()
-        # print( str(super().__son__()) + str(self.grogne)  )
-        
+        print("Mon bruit est " + str(self.grogne))
 
-    # def manger(self):
-    #     super().__manger__()
-    #     print("Je mange des " + self.mange )
 
-    # def dodo(self):
-    #     super().__dormir__()
-    #     print("Je dors " + self.dodo)
+
+
+class Hypo(Aquatique):
+     def __init__(self):
+         pass
+     
+     def bruit():
+         super().__son__()
+
+
 
 bruit = "waaaaa"
 mange = "Mangue"
 dodo = "La nuit"
 
-hypo = Hypo(str(bruit))
+hypo = Hypo()
 
 # print("Hypopothame => Le bruit : " + str(hypo.groner) + "Le repas : " + str(hypo.manger) + "Le type de sommeil : " + str(hypo.dodo) )
 print("Hypopothame => Le bruit : " + str(hypo.groner())  )
 
 
-# class Lion(Mamifere):
-#     def __init__(self):
 
-#         pass                
-# class Tigre(Mamifere):
-#     def __init__(self):
-#         pass
-
-# class Loup(Mamifere):
-#     def __init__(self):
-#         pass
